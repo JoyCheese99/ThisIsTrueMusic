@@ -1,0 +1,29 @@
+server:
+  port: 8081
+  address: 0.0.0.0
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/hajimi_music?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    username: "root"
+    password: "123456"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 100MB
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+
+rustfs:
+  endpoint: http://26.89.197.25:9000
+  access-key: trueMusic
+  secret-key: 123456
+  bucket-name: hajimi-music
+  region: us-east-1
+
+jwt:
+  secret: hajimi-music-secret-key-must-be-very-long-32bytes
+  expire-hours: 72
