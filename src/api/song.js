@@ -19,3 +19,10 @@ export const postCommentApi = (id, data) => request.post(`/songs/${id}/comments`
 export const uploadSongApi = (formData) => request.post('/songs', formData, {
   headers: { 'Content-Type': 'multipart/form-data' }
 })
+// 删除自己上传的歌曲
+export const deleteSongApi = (id) =>
+  request.delete(`/songs/${id}`)
+
+// 上报歌曲播放记录
+export const reportSongPlayApi = (id) =>
+  request.post(`/songs/${id}/play`)

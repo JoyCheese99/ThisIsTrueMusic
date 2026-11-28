@@ -1,9 +1,8 @@
 <template>
   <div class="home-hero">
     <div class="hero-content">
-      <div class="badge">全新 AI 驱动</div>
       <h1>让每一首歌<br>都变成 <span class="gradient-text">哈基米</span> 的声音</h1>
-      <p>极致的音乐分享社区，结合 RVC 声音转换技术。<br>上传你的音乐，一键生成专属猫咪翻唱。</p>
+      <p>极致的音乐分享社区，结合 RVC 声音转换技术<br>上传你的音乐，一键生成ai翻唱</p>
       
       <div class="actions">
         <el-button type="primary" size="large" round class="cta-btn" @click="$router.push('/songs')">

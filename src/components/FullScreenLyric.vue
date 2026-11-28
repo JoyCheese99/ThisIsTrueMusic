@@ -100,12 +100,14 @@ watch(() => player.currentTime, (time) => {
 .lyric-page {
   position: fixed;
   inset: 0;
-  z-index: 2000;
+  z-index: 900;
   background: #111;
   color: #fff;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  padding-bottom: 90px;
+  box-sizing: border-box;
 }
 
 .bg-blur {
@@ -137,13 +139,13 @@ watch(() => player.currentTime, (time) => {
   position: relative;
   z-index: 10;
   flex: 1;
+  min-height: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10%;
   padding: 0 10%;
 }
-
 /* 左侧唱片 */
 .disc-area {
   text-align: center;

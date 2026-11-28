@@ -16,7 +16,8 @@ const routes = [
       { path: 'my-playlists', component: () => import('@/views/MyPlaylists.vue'), meta: { auth: true } },
       { path: 'playlist/:id', component: () => import('@/views/PlaylistDetail.vue'), meta: { auth: true } },
       { path: 'creators', component: () => import('@/views/CreatorList.vue') },
-      { path: 'creator/:id', component: () => import('@/views/CreatorDetail.vue') }
+      { path: 'creator/:id', component: () => import('@/views/CreatorDetail.vue') },
+      { path: 'my-covers', component: () => import('@/views/MyCovers.vue'), meta: { auth: true } }
     ]
   }
 ]

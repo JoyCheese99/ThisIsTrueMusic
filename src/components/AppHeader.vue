@@ -27,6 +27,7 @@
                   <el-dropdown-item @click="$router.push('/my-favorites')">我的收藏</el-dropdown-item>
                   <el-dropdown-item @click="$router.push('/my-uploads')">我的上传</el-dropdown-item>
                   <el-dropdown-item divided @click="logout">退出登录</el-dropdown-item>
+                  <el-dropdown-item @click="$router.push('/my-covers')">我的 AI 翻唱</el-dropdown-item>
                 </el-dropdown-menu>
               </template>
             </el-dropdown>

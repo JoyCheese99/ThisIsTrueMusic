@@ -1,7 +1,7 @@
 <template>
   <router-view />
   <GlobalPlayer />
-  <FullScreenLyric /> <!-- 新增 -->
+  <FullScreenLyric />
 </template>
 
 <script setup>
